@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+from smtplib import SMTP
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -128,3 +129,13 @@ MEDIA_URL='media/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_HOST_USER='yaswanthreddyyash7660@gmail.com'
+EMAIL_HOST_PASSWORD='yashharry'
+EMAIL_PORT=586
+EMAIL_USE_SSL=False
+EMAIL_USE_TLS=True
