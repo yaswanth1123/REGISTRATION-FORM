@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'dummy.html' %}
+
+    {% block title %}
     <title>Document</title>
-</head>
-<body>
+    {% endblock %}
+{% block body_block %}
     <center>
         <h1>REGISTRATION FORM</h1>
         <form method="POST" enctype="multipart/form-data">
@@ -18,5 +15,5 @@
             <input type="submit" value="register">
         </form>
     </center>
-</body>
-</html>
+    {% endblock %}
+    
